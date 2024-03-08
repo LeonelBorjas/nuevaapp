@@ -1,0 +1,91 @@
+/* NORMALIZACION DE HTML */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* UTILIDADES */
+.center{
+    text-align: center;
+    padding:4px 0px;
+    width: 90vw;
+    margin-left: 60px;
+    border:solid black 2px;
+}
+
+.img_rectangulo{
+    height: 40vh;
+    width: 90vw;
+    margin-left: 60px;
+}
+#rectangulo{
+    background-image: url(../img/design1_image1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.active{
+    background-color: green;
+    color: white;
+    margin:0 5px;
+}   
+
+/* ESTILO GENERAL HTML */
+h1{
+    margin-left: 60px;
+    font-weight: lighter;
+    font-size: 3rem;
+    font-style: italic;
+}
+nav{
+    text-align: end;
+    padding: 30px;
+}
+nav a{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border:solid black 2px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,.4);
+    margin:0 2px;
+    text-align: center;
+}
+.nav_container>nav{
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    right: 75px;
+}
+.article_container{
+    width: 90vw;
+    margin-left: 60px;
+}
+.section_container{
+    width: 50%;
+    display: inline-block;
+    margin: 5px 5rem;
+    font-size: 1.5rem;
+}
+.section_container p{
+    font-size: 1.2rem;
+    margin-left: 25px;
+}
+.section_container>section{
+    margin: 1rem 0;
+}
+#logo{
+    width: 8%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+
+}
+#logo>img{
+    width: 100%;
+    height: auto;
+}
+#contac>p{
+    margin: 1.5rem 0;
+}
