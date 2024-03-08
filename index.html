@@ -4,36 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style1.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style2.css"> -->
+    <link rel="shortcut icon" href="./assets/img/LogoMightyducks-01.png" type="image/x-icon">
     <title>Mighty Ducks Hockey League</title>
 </head>
 
 <body>
     <header>
         <h1>Mighty Ducks Hockey League</h1>
-        <picture>
-            <img src="./assets/img/LogoMightyducks-01.png" width="50" alt="icono de club">
-        </picture>
+        <div class="nav_container">
+            <nav>
+                <a class="active" href="#">HOME</a>
+                <a href="./assets/pages/about-mdhl.html">ABOUT MDHL</a>
+                <a href="./assets/pages/contact.html">CONTACT</a>
+            </nav>
+            <div id="rectangulo" class="img_rectangulo"></div>
+        </div>
     </header>
     <main>
-    <nav>
-        <a href="#">HOME</a>
-        <a href="./assets/pages/about-mdhl.html" >ABOUT MDHL</a>
-        <a href="./assets/pages/contact.html" >CONTACT</a>
-    </nav>
-        <article>
-            <picture>
-                <img src="./assets/img/hockey1.jpg" width="300"
-                    alt="Niño celebrando su jugada de hockey">
+        <h2 class="center">Upcoming Events</h2>
+        <article class="article_container">
+            <picture id="logo">
+                <img src="./assets/img/LogoMightyducks-01.png" alt="icono de club">
             </picture>
-            <h2>Upcoming Events</h2>
-            <h3>August 4</h3>
-            <p>MDSL Fundraiser</p>
-            <h3>August 16</h3>
-            <p>Season Kick-off: Meet the Teams</p>
-            <h3>September 1</h3>
-            <p>First Game of the Season (Check Game Schedule for details)</p>
+            <section class="section_container">
+                <section>
+                    <h3>August 4</h3>
+                    <p>MDSL Fundraiser</p>
+                </section>
+                <section>
+                    <h3>August 16</h3>
+                    <p>Season Kick-off: Meet the Teams</p>
+                </section>
+                <section>
+                    <h3>September 1</h3>
+                    <p>First Game of the Season (Check Game Schedule for details)</p>
+                </section>
+            </section>
         </article>
-</main>
+    </main>
 </body>
 
 </html>
