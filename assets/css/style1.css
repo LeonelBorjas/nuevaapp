@@ -4,16 +4,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+html{
+    background-color: antiquewhite;
+}
 /* UTILIDADES */
-.center{
+.left--aling{
+    text-align: left;
+}
+.center--aling{
     text-align: center;
-    padding:4px 0px;
+}
+.center--styled{
+    text-align: center;
+    padding:4px 0;
     width: 90vw;
     margin-left: 60px;
     border:solid black 2px;
 }
-
 .img_rectangulo{
     height: 40vh;
     width: 90vw;
@@ -30,7 +37,46 @@
     color: white;
     margin:0 5px;
 }   
-
+.ulist--disc{
+    list-style-type: disc;
+    margin-left: 30px;
+    }
+    .list--decimal{ 
+        list-style-type: decimal;
+        margin-left: 20px;
+    }
+    
+    .list--lowerAlpha{
+        list-style-type: lower-alpha;
+        margin-left: 20px;
+    }
+    .list--style_inside{
+    list-style-position: inside;
+    }
+    .space{
+        margin-bottom: 3px;
+    }
+    .font--bold{
+        font-weight: bold;
+    }
+    .first_line--indent{
+        text-indent: 60px;
+    }
+    .list--circle{
+    list-style-type: circle;
+}
+.flex{
+    display: flex;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.items-center{
+    align-items: center;
+}
+.margin-top{
+    margin-top: 25px;
+}
 /* ESTILO GENERAL HTML */
 h1{
     margin-left: 60px;
@@ -48,7 +94,7 @@ nav a{
     padding: 5px 10px;
     text-decoration: none;
     border:solid black 2px;
-    box-shadow: 4px 4px 0px rgba(0,0,0,.4);
+    box-shadow: 4px 4px 0 rgba(0,0,0,.4);
     margin:0 2px;
     text-align: center;
 }
@@ -88,4 +134,23 @@ nav a{
 }
 #contac>p{
     margin: 1.5rem 0;
+}
+
+main,footer{
+    width: 90vw;
+    margin-left: 60px;
+}
+.main--font_size{
+    font-size: 20px;
+}
+table{
+    text-align: center; 
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+table,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0.5rem 3rem;
 }
