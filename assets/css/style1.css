@@ -4,79 +4,116 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
     background-color: antiquewhite;
 }
+
 /* UTILIDADES */
 .left--aling{
     text-align: left;
+    margin: 20px;
+    padding: 5px;
 }
+
 .center--aling{
     text-align: center;
 }
+
 .center--styled{
     text-align: center;
     padding:4px 0;
     width: 90vw;
-    margin-left: 60px;
+    margin-left: 0px;
     border:solid black 2px;
 }
+
 .img_rectangulo{
     height: 40vh;
     width: 90vw;
     margin-left: 60px;
 }
+
 #rectangulo{
     background-image: url(../img/design1_image1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .active{
     background-color: green;
     color: white;
     margin:0 5px;
-}   
+}
+
 .ulist--disc{
     list-style-type: disc;
     margin-left: 30px;
-    }
-    .list--decimal{ 
-        list-style-type: decimal;
-        margin-left: 20px;
-    }
+}
+
+.list--decimal{ 
+    list-style-type: decimal;
+    margin-left: 20px;
+}
     
-    .list--lowerAlpha{
-        list-style-type: lower-alpha;
-        margin-left: 20px;
-    }
-    .list--style_inside{
-    list-style-position: inside;
-    }
-    .space{
-        margin-bottom: 3px;
-    }
-    .font--bold{
-        font-weight: bold;
-    }
-    .first_line--indent{
-        text-indent: 60px;
-    }
-    .list--circle{
+.list--lowerAlpha{
+    list-style-type: lower-alpha;
+    margin-left: 20px;
+}
+
+.list--style_inside{
+    list-style-position: left;
+}
+
+.space{
+    margin-bottom: 2px;
+}
+
+.font--bold{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.first_line--indent{
+    text-indent: 60px;
+}
+
+.list--circle{
     list-style-type: circle;
 }
+
 .flex{
     display: flex;
 }
+
 .justify-around{
     justify-content: space-around;
 }
+
 .items-center{
     align-items: center;
 }
+
 .margin-top{
     margin-top: 25px;
 }
+
+ol.space > li{
+    margin-bottom: 30px;
+}
+
+.submit-button{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 400px;
+}
+
+
 /* ESTILO GENERAL HTML */
 h1{
     margin-left: 60px;
@@ -84,10 +121,12 @@ h1{
     font-size: 3rem;
     font-style: italic;
 }
+
 nav{
     text-align: end;
     padding: 30px;
 }
+
 nav a{
     background-color: blue;
     color: white;
@@ -98,40 +137,47 @@ nav a{
     margin:0 2px;
     text-align: center;
 }
+
 .nav_container>nav{
     position: absolute;
     width: 100%;
     top: 10px;
     right: 75px;
 }
+
 .article_container{
     width: 90vw;
     margin-left: 60px;
 }
+
 .section_container{
     width: 50%;
     display: inline-block;
     margin: 5px 5rem;
     font-size: 1.5rem;
 }
+
 .section_container p{
     font-size: 1.2rem;
     margin-left: 25px;
 }
+
 .section_container>section{
     margin: 1rem 0;
 }
+
 #logo{
     width: 8%;
     display: inline-block;
     vertical-align: top;
     margin-top: 10px;
-
 }
+
 #logo>img{
     width: 100%;
     height: auto;
 }
+
 #contac>p{
     margin: 1.5rem 0;
 }
@@ -140,17 +186,82 @@ main,footer{
     width: 90vw;
     margin-left: 60px;
 }
+
 .main--font_size{
     font-size: 20px;
 }
+
 table{
     text-align: center; 
     padding: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
+
 table,tr,td{
     border: 1px solid black;
     border-collapse: collapse;
     padding: 0.5rem 3rem;
+}
+
+/* Aplicando flex al section */
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+    outline: 1px solid red;
+    padding: 1rem;
+}
+
+.form-section>h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+.form-section h3 {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-section fieldset {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;  
+  border-radius: 0.5rem;
+}
+
+.form-section fieldset label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+.form-section fieldset label input, select {
+  height: 2.4vh;
+}
+
+.footer-left {
+  text-align: end;
+  margin-top: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(243, 180, 104);
+  height: 6vh;
+  padding: 1rem;
+
+}
+.iframe-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 20px; 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+iframe {
+  width: 400px; 
+  height: 300px; 
 }
